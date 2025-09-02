@@ -1,0 +1,19 @@
+# Conf
+FPS = 60
+SIZE = WIDTH, HEIGHT = (1280, 720)
+UNIT = WIDTH // 20
+
+# Colors
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+BLUE = (0, 0, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+YELLOW = (255, 255, 0)
+PURPLE = (150, 0, 150)
+DARKGREEN = (0, 60, 0)
+MEDIUMGREEN = (0, 100, 0, 25)
+GRAY = (75, 75, 75)
+LIGHTGRAY = (100, 100, 100)
+DARKGRAY = (50, 50, 50)
+CLEAR = (0,0,0,0)

@@ -1,0 +1,15 @@
+    def draw(self):
+        if self.color[3] > 0:
+            draw_circle_alpha(screen, self.color, (self.x, self.y), self.r)
+            self.r += self.inc_r
+            # Modify alpha of the current color (by creating a temporary list because tuples are immutable)
+            self.alpha -= 1
+            new_color = list(self.color)
+            new_color[3] = self.alpha
+            if self.r < self.inc_r+1:
+                new_color[0] = new_color[0] * ( (height - self.y) / height )
+                new_color[1] = new_color[1] * ( (height - self.y) / height )
+                new_color[2] = new_color[2] * ( (height - self.y) / height )
+            self.color = tuple(new_color)
+        else:
+            bubble_list.remove(self)
